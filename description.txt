@@ -1,1 +1,1 @@
-This mod adds many bows and arrows to Minetest.
+This mod adds potions to minetest.

@@ -1,0 +1,15 @@
+#Potion duration
+simple_potions_duration (Potion duration) float 300
+#Jump strength
+simple_potions_jump_mult (Jump potion multiplier) float 2
+#Speed strength
+simple_potions_speed_mult (Speed potion multiplier) float 2.5
+#Gravity strength
+simple_potions_gravity_mult (Gravity potion multiplier) float 0.4
+#Health strength
+simple_potions_heal_mult (Healing potion amount) int 8
+#Bottle override
+simple_potions_vessel_override (Override vessels:glass_bottle) bool false
+
+
+
