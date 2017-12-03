@@ -1,5 +1,4 @@
 # Simple potions for minetest
-----
 ## Description
 * A mod for minetest that adds simple, craftable potions
 * Potions can be placed as node or stored in default vessel shelves
