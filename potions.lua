@@ -25,7 +25,7 @@ minetest.register_node("simple_potions:potion_regeneration", {
 	on_use = function(itemstack, user, pointed_thing)
 		local playerpos = user:getpos()
 		playereffects.apply_effect_type("potion_regeneration", simple_potions_duration, user)
-		potionEffect("particle_regeneration.png", playerpos, 0)
+		potionEffect("particle_regeneration.png", playerpos, -0.5)
 		removePotion(user, itemstack, "vessels:glass_bottle")
 	return itemstack
 	end
@@ -201,7 +201,7 @@ minetest.register_node("simple_potions:potion_fly", {
 	on_use = function(itemstack, user, pointed_thing)
 		local playerpos = user:getpos();
 		playereffects.apply_effect_type("potion_fly", simple_potions_duration, user)
-		potionEffect("particle_fly.png", playerpos, -1)
+		potionEffect("particle_fly.png", playerpos, -0.1)
 		removePotion(user, itemstack, "vessels:glass_bottle")
 	return itemstack
 	end
@@ -248,7 +248,7 @@ minetest.register_node("simple_potions:potion_kill", {
 	inventory_image = "bottle_black.png",
 	on_use = function(itemstack, user, pointed_thing)
 		local playerpos = user:getpos()
-		potionEffect("particle_black.png", playerpos, 0)
+		potionEffect("particle_black.png", playerpos, 0.4)
 		removePotion(user, itemstack, "vessels:glass_bottle")
 		user:set_hp(0)
 	return itemstack

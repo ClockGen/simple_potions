@@ -1,4 +1,4 @@
-playereffects.register_effect_type("potion_speed", "Potion of speed", "effect_speed.png", {"potion_speed"},
+playereffects.register_effect_type("potion_speed", "High Speed", "effect_speed.png", {"potion_speed"},
 	function(player)
 	player_monoids.speed:add_change(player, simple_potions_speed_mult, "potion_speed")
 	end, 
@@ -7,7 +7,7 @@ playereffects.register_effect_type("potion_speed", "Potion of speed", "effect_sp
 	end
 )
 
-playereffects.register_effect_type("potion_jump", "Potion of jump", "effect_jump.png", {"potion_jump"},
+playereffects.register_effect_type("potion_jump", "High Jump", "effect_jump.png", {"potion_jump"},
 	function(player)
 	player_monoids.jump:add_change(player, simple_potions_jump_mult, "potion_jump")
 	end, 
@@ -16,7 +16,7 @@ playereffects.register_effect_type("potion_jump", "Potion of jump", "effect_jump
 	end
 )
 
-playereffects.register_effect_type("potion_gravity", "Gravity potion", "effect_gravity.png", {"potion_gravity"},
+playereffects.register_effect_type("potion_gravity", "Low Gravity", "effect_gravity.png", {"potion_gravity"},
 	function(player)
 	player_monoids.gravity:add_change(player, simple_potions_gravity_mult, "potion_gravity")
 	end, 

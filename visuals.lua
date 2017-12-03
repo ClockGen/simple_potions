@@ -1,7 +1,7 @@
 function potionEffect(ptex, ppos, pdir)
 	minetest.add_particlespawner({
 	amount = 50,
-	time = 0.1,
+	time = 0.5,
 	minpos = {x=ppos.x-0.5, y=ppos.y+1.5, z=ppos.z-0.5},
 	maxpos = {x=ppos.x+0.5, y=ppos.y+2, z=ppos.z+0.5},
 	minvel = {x=-3, y=3*pdir, z=-3},
