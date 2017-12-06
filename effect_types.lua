@@ -1,4 +1,4 @@
-playereffects.register_effect_type("potion_speed", "High Speed", "effect_speed.png", {"potion_speed"},
+playereffects.register_effect_type("eff_potion_speed", "High Speed", "effect_speed.png", {"potion_speed"},
 	function(player)
 	player_monoids.speed:add_change(player, simple_potions_speed_mult, "potion_speed")
 	end, 
@@ -7,7 +7,7 @@ playereffects.register_effect_type("potion_speed", "High Speed", "effect_speed.p
 	end
 )
 
-playereffects.register_effect_type("potion_jump", "High Jump", "effect_jump.png", {"potion_jump"},
+playereffects.register_effect_type("eff_potion_jump", "High Jump", "effect_jump.png", {"potion_jump"},
 	function(player)
 	player_monoids.jump:add_change(player, simple_potions_jump_mult, "potion_jump")
 	end, 
@@ -16,7 +16,7 @@ playereffects.register_effect_type("potion_jump", "High Jump", "effect_jump.png"
 	end
 )
 
-playereffects.register_effect_type("potion_gravity", "Low Gravity", "effect_gravity.png", {"potion_gravity"},
+playereffects.register_effect_type("eff_potion_gravity", "Low Gravity", "effect_gravity.png", {"potion_gravity"},
 	function(player)
 	player_monoids.gravity:add_change(player, simple_potions_gravity_mult, "potion_gravity")
 	end, 
@@ -25,7 +25,7 @@ playereffects.register_effect_type("potion_gravity", "Low Gravity", "effect_grav
 	end
 )
 
-playereffects.register_effect_type("potion_fly", "Flying", "effect_fly.png", {"potion_fly"},
+playereffects.register_effect_type("eff_potion_fly", "Flying", "effect_fly.png", {"potion_fly"},
 	function(player)
 	player_monoids.fly:add_change(player, true, "potion_fly")
 	end, 
@@ -34,7 +34,7 @@ playereffects.register_effect_type("potion_fly", "Flying", "effect_fly.png", {"p
 	end
 )
 
-playereffects.register_effect_type("potion_invisible", "Invisibility", "effect_invisible.png", {"potion_invisible"},
+playereffects.register_effect_type("eff_potion_invisible", "Invisibility", "effect_invisible.png", {"potion_invisible"},
 	function(player)
 	player_monoids.visual_size:add_change(player, {x=0, y=0}, "potion_invisible")
 	player:set_nametag_attributes({color = {a = 0, r = 255, g = 255, b = 255}})
@@ -45,14 +45,14 @@ playereffects.register_effect_type("potion_invisible", "Invisibility", "effect_i
 	end
 )
 
-playereffects.register_effect_type("potion_regeneration", "Regeneration", "effect_regen.png", {"potion_regeneration"},
+playereffects.register_effect_type("eff_potion_regeneration", "Regeneration", "effect_regen.png", {"potion_regeneration"},
 	function(player)
 	player:set_hp(player:get_hp()+1)
 	end, 
 	nil, nil, nil, 1
 )
 
-playereffects.register_effect_type("potion_breath", "Water breathing", "effect_breath.png", {"potion_breath"},
+playereffects.register_effect_type("eff_potion_breath", "Water breathing", "effect_breath.png", {"potion_breath"},
 	function(player)
 	player:set_breath(player:get_breath()+1)
 	end, 
