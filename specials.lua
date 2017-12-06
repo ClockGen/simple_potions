@@ -1,6 +1,6 @@
 if simple_potions_vessel_override then
 	minetest.register_node(":vessels:glass_bottle", {
-		description = "Glass bottle",
+		description = "Glass Bottle",
 		drawtype = "plantlike",
 		tiles = {"vessels_glass_bottle.png"},
 		wield_image = "vessels_glass_bottle.png",

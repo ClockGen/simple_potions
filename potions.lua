@@ -53,7 +53,7 @@ simple_potions.registerPotion(
 				"particle_jump.png",
 				0.5,
 				"vessels:glass_bottle",
-				{'default:coal_lump', 'default:copper_ingot', 'simple_potions:potion_water'}
+				{'default:papyrus', 'default:coal_lump', 'farming:cotton', 'simple_potions:potion_water'}
 				)
 
 simple_potions.registerPotion(
@@ -64,7 +64,7 @@ simple_potions.registerPotion(
 				"particle_speed.png",
 				-0.3,
 				"vessels:glass_bottle",
-				{'default:papyrus', 'default:apple', 'simple_potions:potion_water'}
+				{'default:papyrus', 'default:coal_lump', 'farming:wheat', 'simple_potions:potion_water'}
 				)
 
 simple_potions.registerPotion(
