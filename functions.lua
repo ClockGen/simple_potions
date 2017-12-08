@@ -25,8 +25,10 @@ function simple_potions.removePotion(user, itemstack, replaceitem)
 	local inv = user:get_inventory()
 	if inv:room_for_item("main", {name=replaceitem}) then
 		inv:add_item("main", {name=replaceitem})
-		itemstack:take_item()
+	else
+		minetest.add_item({x=user:get_pos().x, y=user:get_pos().y+2, z=user:get_pos().z}, "vessels:glass_bottle")
 	end
+	itemstack:take_item()
 end
 
 function simple_potions.registerPotion(name, desc, texture, efftype, efftexture, particledir, returnitem, craft, func)
