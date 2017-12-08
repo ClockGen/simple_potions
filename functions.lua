@@ -26,7 +26,7 @@ function simple_potions.removePotion(user, itemstack, replaceitem)
 	if inv:room_for_item("main", {name=replaceitem}) then
 		inv:add_item("main", {name=replaceitem})
 	else
-		minetest.add_item({x=user:get_pos().x, y=user:get_pos().y+2, z=user:get_pos().z}, "vessels:glass_bottle")
+		minetest.add_item({x=user:get_pos().x, y=user:get_pos().y+2, z=user:get_pos().z}, replaceitem)
 	end
 	itemstack:take_item()
 end
